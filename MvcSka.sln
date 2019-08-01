@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcSka", "MvcSka\MvcSka.csproj", "{055CBC62-C931-407B-99FB-DB01D0BCF91B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055CBC62-C931-407B-99FB-DB01D0BCF91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055CBC62-C931-407B-99FB-DB01D0BCF91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055CBC62-C931-407B-99FB-DB01D0BCF91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055CBC62-C931-407B-99FB-DB01D0BCF91B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62165F16-8064-4B79-B281-59C6E183C501}
+	EndGlobalSection
+EndGlobal
