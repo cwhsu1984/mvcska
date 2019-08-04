@@ -1,3 +1,32 @@
-﻿<div>
-  @Html.Partial("_Form")
+﻿@model MvcSka.Models.ViewModel.TableViewModel
+
+<div>
+  @Html.Partial("_InputFormPartialView")
+</div>
+<div>
+  <div class="col-md-4">
+    @Html.Partial("_TablePartialView", Model)
+  </div>
+  <div class="col-md-4">
+    @Html.Action("TableChildAction")
+  </div>
+  <div class="col-md-4" id="pureAjax">>
+    @Html.Hidden("ajaxUrl", Url.Action("TableAjax"))
+
+    @section scripts
+    {
+      <script>
+        $(function () {
+          $.ajax({
+            type: "GET",
+            url: $("#ajaxUrl").val(),
+            dataType: "HTML",
+            success: function (response) {
+              $("#pureAjax").html(response);
+            }
+          });
+        });
+      </script>
+    }
+  </div>
 </div>
